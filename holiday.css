@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #0f1819, #66a6ff);
+    color: #333;
+    transition: all 0.3s ease-in-out;
+}
+
+header {
+    /* background-color: #386f45; */
+    color: rgb(60, 145, 41);
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); */
+}
+
+section {
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* justify-items: center; */
+    align-items: center;
+}
+
+legend {
+    font-weight: bold;
+    color: #4CAF50;
+    font-size: 18px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    /* align-content: left; */
+    margin-left: 0;
+    padding-left: 0;
+}
+
+input, textarea, select, button {
+    width: 95%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.005);
+}
+
+#output-section {
+    animation: fadeIn 1s ease-in-out;
+}
+
+#portfolio-output {
+    padding: 20px;
+    font-size: 18px;
+    border: 1px dashed #4CAF50;
+    background: #f9f9f9;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* 
+header:hover {
+    animation: pulse 1s infinite;
+} */
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 8px #4CAF50;
+}
+
+select {
+    appearance: none;
+    background: linear-gradient(120deg, #66a6ff, #89f7fe);
+    color: white;
+}
+
+textarea:focus, input:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px #4CAF50;
+}
+
+textarea {
+    resize: none;
+}
+
+@media (max-width: 768px) {
+    section {
+        width: 95%;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
